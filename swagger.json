@@ -1,0 +1,7526 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "NetBox API",
+    "description": "",
+    "version": ""
+  },
+  "host": "localhost",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/circuits/_choices/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "operationId": "circuits__choices_list"
+      }
+    },
+    "/api/circuits/_choices/{id}/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "",
+            "required": true,
+            "type": "string",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "circuits__choices_read"
+      }
+    },
+    "/api/circuits/circuit-terminations/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "term_side",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "port_speed",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "upstream_speed",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "xconnect_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "circuit_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_circuit-terminations_list"
+      }
+    },
+    "/api/circuits/circuit-terminations/{id}/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this circuit termination.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "term_side",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "port_speed",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "upstream_speed",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "xconnect_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "circuit_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_circuit-terminations_read"
+      }
+    },
+    "/api/circuits/circuit-types/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_circuit-types_list"
+      }
+    },
+    "/api/circuits/circuit-types/{id}/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this circuit type.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_circuit-types_read"
+      }
+    },
+    "/api/circuits/circuits/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cid",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "install_date",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "commit_rate",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "provider_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "provider",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_circuits_list"
+      }
+    },
+    "/api/circuits/circuits/{id}/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this circuit.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cid",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "install_date",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "commit_rate",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "provider_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "provider",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_circuits_read"
+      }
+    },
+    "/api/circuits/providers/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "asn",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "account",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_providers_list"
+      }
+    },
+    "/api/circuits/providers/{id}/": {
+      "get": {
+        "tags": [
+          "circuits"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this provider.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "asn",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "account",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "circuits_providers_read"
+      }
+    },
+    "/api/circuits/providers/{id}/graphs/": {
+      "get": {
+        "description": "A convenience method for rendering graphs for a particular provider.",
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this provider.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "tags": [
+          "circuits"
+        ],
+        "summary": "A convenience method for rendering graphs for a particular provider.",
+        "operationId": "circuits_providers_graphs",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/dcim/_choices/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "operationId": "dcim__choices_list"
+      }
+    },
+    "/api/dcim/_choices/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "",
+            "required": true,
+            "type": "string",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "dcim__choices_read"
+      }
+    },
+    "/api/dcim/connected-device/": {
+      "get": {
+        "description": "This endpoint allows a user to determine what device (if any) is connected to a given peer device and peer\ninterface. This is useful in a situation where a device boots with no configuration, but can detect its neighbors\nvia a protocol such as LLDP. Two query parameters must be included in the request:\n\n* `peer-device`: The name of the peer device\n* `peer-interface`: The name of the peer interface",
+        "parameters": [],
+        "tags": [
+          "dcim"
+        ],
+        "summary": "This endpoint allows a user to determine what device (if any) is connected to a given peer device and peer",
+        "operationId": "dcim_connected-device_list",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/dcim/console-connections/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "connection_status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-connections_list"
+      }
+    },
+    "/api/dcim/console-port-templates/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-port-templates_list"
+      }
+    },
+    "/api/dcim/console-port-templates/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this console port template.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-port-templates_read"
+      }
+    },
+    "/api/dcim/console-ports/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-ports_list"
+      }
+    },
+    "/api/dcim/console-ports/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this console port.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-ports_read"
+      }
+    },
+    "/api/dcim/console-server-port-templates/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-server-port-templates_list"
+      }
+    },
+    "/api/dcim/console-server-port-templates/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this console server port template.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-server-port-templates_read"
+      }
+    },
+    "/api/dcim/console-server-ports/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-server-ports_list"
+      }
+    },
+    "/api/dcim/console-server-ports/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this console server port.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_console-server-ports_read"
+      }
+    },
+    "/api/dcim/device-bay-templates/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-bay-templates_list"
+      }
+    },
+    "/api/dcim/device-bay-templates/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this device bay template.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-bay-templates_read"
+      }
+    },
+    "/api/dcim/device-bays/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-bays_list"
+      }
+    },
+    "/api/dcim/device-bays/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this device bay.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-bays_read"
+      }
+    },
+    "/api/dcim/device-roles/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "color",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-roles_list"
+      }
+    },
+    "/api/dcim/device-roles/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this device role.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "color",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-roles_read"
+      }
+    },
+    "/api/dcim/device-types/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "model",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "part_number",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "u_height",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_full_depth",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_console_server",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_pdu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_network_device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "subdevice_role",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-types_list"
+      }
+    },
+    "/api/dcim/device-types/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this device type.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "model",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "part_number",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "u_height",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_full_depth",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_console_server",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_pdu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_network_device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "subdevice_role",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_device-types_read"
+      }
+    },
+    "/api/dcim/devices/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "serial",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_type_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "asset_tag",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rack_group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rack_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "model",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_full_depth",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_console_server",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_pdu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_network_device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mac_address",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "has_primary_ip",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_devices_list"
+      }
+    },
+    "/api/dcim/devices/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this device.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "serial",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_type_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "asset_tag",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rack_group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rack_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "model",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_full_depth",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_console_server",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_pdu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_network_device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mac_address",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "has_primary_ip",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_devices_read"
+      }
+    },
+    "/api/dcim/devices/{id}/napalm/": {
+      "get": {
+        "description": "Execute a NAPALM method on a Device",
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this device.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "tags": [
+          "dcim"
+        ],
+        "summary": "Execute a NAPALM method on a Device",
+        "operationId": "dcim_devices_napalm",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/dcim/interface-connections/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "connection_status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_interface-connections_list"
+      }
+    },
+    "/api/dcim/interface-connections/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this interface connection.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "connection_status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_interface-connections_read"
+      }
+    },
+    "/api/dcim/interface-templates/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "form_factor",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mgmt_only",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_interface-templates_list"
+      }
+    },
+    "/api/dcim/interface-templates/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this interface template.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "form_factor",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mgmt_only",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_interface-templates_read"
+      }
+    },
+    "/api/dcim/interfaces/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "form_factor",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "enabled",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mtu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mgmt_only",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "lag_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mac_address",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_interfaces_list"
+      }
+    },
+    "/api/dcim/interfaces/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this interface.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "form_factor",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "enabled",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mtu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mgmt_only",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "lag_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mac_address",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_interfaces_read"
+      }
+    },
+    "/api/dcim/interfaces/{id}/graphs/": {
+      "get": {
+        "description": "A convenience method for rendering graphs for a particular interface.",
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this interface.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "tags": [
+          "dcim"
+        ],
+        "summary": "A convenience method for rendering graphs for a particular interface.",
+        "operationId": "dcim_interfaces_graphs",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/dcim/inventory-items/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "part_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "serial",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "discovered",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "asset_tag",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_inventory-items_list"
+      }
+    },
+    "/api/dcim/inventory-items/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this inventory item.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "part_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "serial",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "discovered",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "manufacturer",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "asset_tag",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_inventory-items_read"
+      }
+    },
+    "/api/dcim/manufacturers/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_manufacturers_list"
+      }
+    },
+    "/api/dcim/manufacturers/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this manufacturer.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_manufacturers_read"
+      }
+    },
+    "/api/dcim/platforms/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_platforms_list"
+      }
+    },
+    "/api/dcim/platforms/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this platform.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_platforms_read"
+      }
+    },
+    "/api/dcim/power-connections/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "connection_status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-connections_list"
+      }
+    },
+    "/api/dcim/power-outlet-templates/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-outlet-templates_list"
+      }
+    },
+    "/api/dcim/power-outlet-templates/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this power outlet template.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-outlet-templates_read"
+      }
+    },
+    "/api/dcim/power-outlets/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-outlets_list"
+      }
+    },
+    "/api/dcim/power-outlets/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this power outlet.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-outlets_read"
+      }
+    },
+    "/api/dcim/power-port-templates/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-port-templates_list"
+      }
+    },
+    "/api/dcim/power-port-templates/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this power port template.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "devicetype_id",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-port-templates_read"
+      }
+    },
+    "/api/dcim/power-ports/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-ports_list"
+      }
+    },
+    "/api/dcim/power-ports/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this power port.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_power-ports_read"
+      }
+    },
+    "/api/dcim/rack-groups/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_rack-groups_list"
+      }
+    },
+    "/api/dcim/rack-groups/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this rack group.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_rack-groups_read"
+      }
+    },
+    "/api/dcim/rack-reservations/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "created",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rack_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "user_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "user",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_rack-reservations_list"
+      }
+    },
+    "/api/dcim/rack-reservations/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this rack reservation.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "created",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rack_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "user_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "user",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_rack-reservations_read"
+      }
+    },
+    "/api/dcim/rack-roles/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "color",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_rack-roles_list"
+      }
+    },
+    "/api/dcim/rack-roles/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this rack role.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "color",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_rack-roles_read"
+      }
+    },
+    "/api/dcim/racks/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "serial",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "width",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "u_height",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "desc_units",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "facility_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_racks_list"
+      }
+    },
+    "/api/dcim/racks/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this rack.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "serial",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "width",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "u_height",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "desc_units",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "facility_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_racks_read"
+      }
+    },
+    "/api/dcim/racks/{id}/units/": {
+      "get": {
+        "description": "List rack units (by rack)",
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this rack.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "tags": [
+          "dcim"
+        ],
+        "summary": "List rack units (by rack)",
+        "operationId": "dcim_racks_units",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/dcim/regions/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_regions_list"
+      }
+    },
+    "/api/dcim/regions/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this region.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_regions_read"
+      }
+    },
+    "/api/dcim/sites/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "facility",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "asn",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "contact_name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "contact_phone",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "contact_email",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "region_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "region",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_sites_list"
+      }
+    },
+    "/api/dcim/sites/{id}/": {
+      "get": {
+        "tags": [
+          "dcim"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this site.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "facility",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "asn",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "contact_name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "contact_phone",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "contact_email",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "region_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "region",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          }
+        ],
+        "operationId": "dcim_sites_read"
+      }
+    },
+    "/api/dcim/sites/{id}/graphs/": {
+      "get": {
+        "description": "A convenience method for rendering graphs for a particular site.",
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this site.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "tags": [
+          "dcim"
+        ],
+        "summary": "A convenience method for rendering graphs for a particular site.",
+        "operationId": "dcim_sites_graphs",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/extras/_choices/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "operationId": "extras__choices_list"
+      }
+    },
+    "/api/extras/_choices/{id}/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "",
+            "required": true,
+            "type": "string",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "extras__choices_read"
+      }
+    },
+    "/api/extras/export-templates/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "content_type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          }
+        ],
+        "operationId": "extras_export-templates_list"
+      }
+    },
+    "/api/extras/export-templates/{id}/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this export template.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "content_type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          }
+        ],
+        "operationId": "extras_export-templates_read"
+      }
+    },
+    "/api/extras/graphs/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          }
+        ],
+        "operationId": "extras_graphs_list"
+      }
+    },
+    "/api/extras/graphs/{id}/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this graph.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          }
+        ],
+        "operationId": "extras_graphs_read"
+      }
+    },
+    "/api/extras/image-attachments/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          }
+        ],
+        "operationId": "extras_image-attachments_list"
+      }
+    },
+    "/api/extras/image-attachments/{id}/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this image attachment.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "extras_image-attachments_read"
+      }
+    },
+    "/api/extras/recent-activity/": {
+      "get": {
+        "description": "List all UserActions to provide a log of recent activity.",
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "user",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "username",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "extras"
+        ],
+        "summary": "List all UserActions to provide a log of recent activity.",
+        "operationId": "extras_recent-activity_list",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/extras/recent-activity/{id}/": {
+      "get": {
+        "description": "List all UserActions to provide a log of recent activity.",
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this user action.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "user",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "username",
+            "in": "query"
+          }
+        ],
+        "tags": [
+          "extras"
+        ],
+        "summary": "List all UserActions to provide a log of recent activity.",
+        "operationId": "extras_recent-activity_read",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/extras/topology-maps/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "extras_topology-maps_list"
+      }
+    },
+    "/api/extras/topology-maps/{id}/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this topology map.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "extras_topology-maps_read"
+      }
+    },
+    "/api/extras/topology-maps/{id}/render/": {
+      "get": {
+        "tags": [
+          "extras"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this topology map.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "extras_topology-maps_render"
+      }
+    },
+    "/api/ipam/_choices/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "operationId": "ipam__choices_list"
+      }
+    },
+    "/api/ipam/_choices/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "",
+            "required": true,
+            "type": "string",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "ipam__choices_read"
+      }
+    },
+    "/api/ipam/aggregates/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "family",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "date_added",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rir_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rir",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_aggregates_list"
+      }
+    },
+    "/api/ipam/aggregates/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this aggregate.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "family",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "date_added",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rir_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rir",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_aggregates_read"
+      }
+    },
+    "/api/ipam/ip-addresses/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "family",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mask_length",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "interface_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_ip-addresses_list"
+      }
+    },
+    "/api/ipam/ip-addresses/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this IP address.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "family",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mask_length",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "interface_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_ip-addresses_read"
+      }
+    },
+    "/api/ipam/prefixes/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "family",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_pool",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "within",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "within_include",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mask_length",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vlan_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "vlan_vid",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_prefixes_list"
+      }
+    },
+    "/api/ipam/prefixes/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this prefix.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "family",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_pool",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "parent",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "within",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "within_include",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mask_length",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vrf",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "vlan_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "vlan_vid",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_prefixes_read"
+      }
+    },
+    "/api/ipam/prefixes/{id}/available-ips/": {
+      "get": {
+        "description": "A convenience method for returning available IP addresses within a prefix. By default, the number of IPs\nreturned will be equivalent to PAGINATE_COUNT. An arbitrary limit (up to MAX_PAGE_SIZE, if set) may be passed,\nhowever results will not be paginated.",
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this prefix.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "tags": [
+          "ipam"
+        ],
+        "summary": "A convenience method for returning available IP addresses within a prefix. By default, the number of IPs",
+        "operationId": "ipam_prefixes_available-ips_read",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/ipam/rirs/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_private",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_rirs_list"
+      }
+    },
+    "/api/ipam/rirs/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this RIR.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "is_private",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_rirs_read"
+      }
+    },
+    "/api/ipam/roles/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_roles_list"
+      }
+    },
+    "/api/ipam/roles/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this role.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_roles_read"
+      }
+    },
+    "/api/ipam/services/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "protocol",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "port",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_services_list"
+      }
+    },
+    "/api/ipam/services/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this service.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "protocol",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "port",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_services_read"
+      }
+    },
+    "/api/ipam/vlan-groups/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_vlan-groups_list"
+      }
+    },
+    "/api/ipam/vlan-groups/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this VLAN group.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_vlan-groups_read"
+      }
+    },
+    "/api/ipam/vlans/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "vid",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_vlans_list"
+      }
+    },
+    "/api/ipam/vlans/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this VLAN.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "vid",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_vlans_read"
+      }
+    },
+    "/api/ipam/vrfs/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rd",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "enforce_unique",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_vrfs_list"
+      }
+    },
+    "/api/ipam/vrfs/{id}/": {
+      "get": {
+        "tags": [
+          "ipam"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this VRF.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "rd",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "enforce_unique",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          }
+        ],
+        "operationId": "ipam_vrfs_read"
+      }
+    },
+    "/api/secrets/_choices/": {
+      "get": {
+        "tags": [
+          "secrets"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "operationId": "secrets__choices_list"
+      }
+    },
+    "/api/secrets/_choices/{id}/": {
+      "get": {
+        "tags": [
+          "secrets"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "",
+            "required": true,
+            "type": "string",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "secrets__choices_read"
+      }
+    },
+    "/api/secrets/secrets/": {
+      "get": {
+        "tags": [
+          "secrets"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "secrets_secrets_list"
+      }
+    },
+    "/api/secrets/secrets/{id}/": {
+      "get": {
+        "tags": [
+          "secrets"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this secret.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "device",
+            "in": "query"
+          }
+        ],
+        "operationId": "secrets_secrets_read"
+      }
+    },
+    "/api/tenancy/_choices/": {
+      "get": {
+        "tags": [
+          "tenancy"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "operationId": "tenancy__choices_list"
+      }
+    },
+    "/api/tenancy/_choices/{id}/": {
+      "get": {
+        "tags": [
+          "tenancy"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "",
+            "required": true,
+            "type": "string",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "tenancy__choices_read"
+      }
+    },
+    "/api/tenancy/tenant-groups/": {
+      "get": {
+        "tags": [
+          "tenancy"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "tenancy_tenant-groups_list"
+      }
+    },
+    "/api/tenancy/tenant-groups/{id}/": {
+      "get": {
+        "tags": [
+          "tenancy"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this tenant group.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "slug",
+            "in": "query"
+          }
+        ],
+        "operationId": "tenancy_tenant-groups_read"
+      }
+    },
+    "/api/tenancy/tenants/": {
+      "get": {
+        "tags": [
+          "tenancy"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          }
+        ],
+        "operationId": "tenancy_tenants_list"
+      }
+    },
+    "/api/tenancy/tenants/{id}/": {
+      "get": {
+        "tags": [
+          "tenancy"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this tenant.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          }
+        ],
+        "operationId": "tenancy_tenants_read"
+      }
+    },
+    "/api/virtualization/_choices/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [],
+        "operationId": "virtualization__choices_list"
+      }
+    },
+    "/api/virtualization/_choices/{id}/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "",
+            "required": true,
+            "type": "string",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "virtualization__choices_read"
+      }
+    },
+    "/api/virtualization/cluster-groups/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_cluster-groups_list"
+      }
+    },
+    "/api/virtualization/cluster-groups/{id}/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this cluster group.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "virtualization_cluster-groups_read"
+      }
+    },
+    "/api/virtualization/cluster-types/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_cluster-types_list"
+      }
+    },
+    "/api/virtualization/cluster-types/{id}/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this cluster type.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          }
+        ],
+        "operationId": "virtualization_cluster-types_read"
+      }
+    },
+    "/api/virtualization/clusters/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_clusters_list"
+      }
+    },
+    "/api/virtualization/clusters/{id}/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this cluster.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "type",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "site",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_clusters_read"
+      }
+    },
+    "/api/virtualization/interfaces/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "enabled",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mtu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mac_address",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_interfaces_list"
+      }
+    },
+    "/api/virtualization/interfaces/{id}/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this interface.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "enabled",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "number",
+            "name": "mtu",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "virtual_machine",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "mac_address",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_interfaces_read"
+      }
+    },
+    "/api/virtualization/virtual-machines/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer",
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer",
+            "name": "offset",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_virtual-machines_list"
+      }
+    },
+    "/api/virtualization/virtual-machines/{id}/": {
+      "get": {
+        "tags": [
+          "virtualization"
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "A unique integer value identifying this virtual machine.",
+            "required": true,
+            "type": "integer",
+            "name": "id",
+            "in": "path"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster",
+            "in": "query"
+          },
+          {
+            "description": "Multiple values may be separated by commas.",
+            "required": false,
+            "type": "number",
+            "name": "id__in",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "q",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "status",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_group_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_group",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "cluster_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "role",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "tenant",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform_id",
+            "in": "query"
+          },
+          {
+            "description": "",
+            "required": false,
+            "type": "string",
+            "name": "platform",
+            "in": "query"
+          }
+        ],
+        "operationId": "virtualization_virtual-machines_read"
+      }
+    }
+  },
+  "securityDefinitions": {
+    "basic": {
+      "type": "basic"
+    }
+  }
+}
