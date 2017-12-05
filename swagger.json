@@ -5,6 +5,12 @@
     "description": "",
     "version": ""
   },
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
   "host": "localhost",
   "schemes": [
     "http"
