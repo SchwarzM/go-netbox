@@ -53,23 +53,23 @@ type Site struct {
 
 	// Count circuits
 	// Read Only: true
-	CountCircuits string `json:"count_circuits,omitempty"`
+	CountCircuits int64 `json:"count_circuits,omitempty"`
 
 	// Count devices
 	// Read Only: true
-	CountDevices string `json:"count_devices,omitempty"`
+	CountDevices int64 `json:"count_devices,omitempty"`
 
 	// Count prefixes
 	// Read Only: true
-	CountPrefixes string `json:"count_prefixes,omitempty"`
+	CountPrefixes int64 `json:"count_prefixes,omitempty"`
 
 	// Count racks
 	// Read Only: true
-	CountRacks string `json:"count_racks,omitempty"`
+	CountRacks int64 `json:"count_racks,omitempty"`
 
 	// Count vlans
 	// Read Only: true
-	CountVlans string `json:"count_vlans,omitempty"`
+	CountVlans int64 `json:"count_vlans,omitempty"`
 
 	// Created
 	// Read Only: true
