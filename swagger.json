@@ -14,7 +14,8 @@
   },
   "host": "localhost:8000",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "basePath": "/api",
   "consumes": [
